@@ -70,9 +70,12 @@
             position: relative;
             animation:para 10s 0s 1 forwards;
         }
+        p,input,button,#h11,#h12{
+            margin-left: 20px;
+        }
         @keyframes para{
             0%{
-                filter:hue-rotate(0);
+                filter:opacity(0);
                 left: -300px;
             }
             50%{
@@ -80,13 +83,13 @@
                 left: -100px;
             }
             100%{
-                filter:hue-rotate(0.8);
+                filter:opacity(0.8);
                 left: 0;
             }
         }
         @keyframes img{
             0%{
-                filter:hue-rotate(0);
+                filter:opacity(0);
                 right: -300px;
             }
             50%{
@@ -94,7 +97,7 @@
                 right: -100px;
             }
             100%{
-                filter:hue-rotate(0.8);
+                filter:opacity(0.8);
                 right: 0;
             }
         }
@@ -130,7 +133,7 @@
             <span id="h12">
                 to Our Newsletter
             </span>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta excepturi cum maxime eum, ab dolor nostrum libero cupiditate impedit vero eaque eius sunt et neque temporibus exercitationem, ratione quibusdam quam?</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat similique magni at natus saepe, porro officia. Perferendis vel, minus odio impedit repellat accusantium voluptatum earum distinctio, aperiam consequuntur iure, dolore voluptatem reiciendis magni dignissimos harum. Laboriosam, perferendis tenetur qui consequatur ipsam nostrum velit quos, modi, reprehenderit ad dolore. Sit asperiores molestias odio, sunt quo voluptates maiores est temporibus quam ipsum adipisci consectetur voluptatibus iure laborum recusandae unde veritatis ea excepturi impedit explicabo. Unde animi dignissimos, laudantium architecto, error provident eaque aspernatur, fugiat iure nisi porro at praesentium dolorem asperiores culpa corporis itaque. Voluptates facilis tempore, animi ipsum molestiae enim possimus?</p>
             <form>
                 <table>
                     <tr>
