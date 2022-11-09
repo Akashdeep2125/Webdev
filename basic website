@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Mock</title>
+    <style>
+        header{
+            text-align: center;
+        }
+        #selection{
+            border:0px;
+            margin:0px;
+        }
+        nav{
+            text-align: end;
+            justify-content: space-between;
+        }
+        #h11,#h12{
+            color: yellow;
+            font-size: xx-large;
+            line-height: 2px;
+        }
+        #h12,p,a{
+            color: white;
+            width: 50%;
+            text-decoration: none;
+        }
+        fieldset{
+            background-color: rgb(5, 4, 12);
+        }
+        #search{
+            border: 2px solid rgb(207, 207, 28);
+            border-radius: 100%;
+            padding: 3px;
+            margin: 5px;
+            box-shadow: 25px 25px 40px yellow;
+            background-color: rgb(241, 241, 14);
+        }
+        table,form{
+             width: 50%;
+             display: inline-block; 
+        }
+        aside{
+            float: right;
+        }
+        img{
+            padding: 20px;
+            display: inline-block;
+            height: 350px;
+            position: relative;
+            overflow: hidden;
+            animation:img 10s 0s 1 forwards ;
+        }
+        #h11{
+            position: relative;
+            animation:img 10s 0s 1 forwards ;
+        }
+        img:hover{
+            box-shadow: 0 25px 40px white;
+            transform: rotateX(180deg);
+            transform: rotateY(180deg);
+            filter: grayscale(50%);
+            filter: blur(2px);
+        }
+        input,button{
+            border-radius: 20px;
+            text-align: center;
+            line-height: 30px;
+        }
+        p,input,#send{
+            position: relative;
+            animation:para 10s 0s 1 forwards;
+        }
+        @keyframes para{
+            0%{
+                filter:hue-rotate(0);
+                left: -300px;
+            }
+            50%{
+                filter: opacity(0.5);
+                left: -100px;
+            }
+            100%{
+                filter:hue-rotate(0.8);
+                left: 0;
+            }
+        }
+        @keyframes img{
+            0%{
+                filter:hue-rotate(0);
+                right: -300px;
+            }
+            50%{
+                filter: opacity(0.5);
+                right: -100px;
+            }
+            100%{
+                filter:hue-rotate(0.8);
+                right: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+           <h2>LANDING PAGE TEMPLATE</h2>
+           <h3>Marketing</h3>
+    </header>
+    <fieldset>
+    <nav>
+        <a href="">HOME</a>
+        <select name="Services" id="selection">
+            <option value="-1">Services</option>
+            <option value="0">Service1</option>
+            <option value="1">Service2</option>
+            <option value="2">Services3</option>
+        </select>
+        <a href="">BLOG</a>
+        <a href="">ABOUT</a>
+        <a href="">FAQ</a>
+        <button type="menu">Search</button>
+    </nav>
+    <aside>
+        <img src="../HTML codes/Gobletoffire.jpg" alt="">
+    </aside>
+    <section>
+        <article>
+            <h1 id="h11">
+                Subscribe Now
+            </h1>
+            <span id="h12">
+                to Our Newsletter
+            </span>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta excepturi cum maxime eum, ab dolor nostrum libero cupiditate impedit vero eaque eius sunt et neque temporibus exercitationem, ratione quibusdam quam?</p>
+            <form>
+                <table>
+                    <tr>
+                        <td>
+                            <input type="text" placeholder="Name">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="email" placeholder="Email">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                        <button type="button" id="send">Send</button>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </article>
+    </section>
+</fieldset>
+</body>
+</html>
